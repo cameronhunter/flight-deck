@@ -1,0 +1,13 @@
+{
+  "name": "flight-deck",
+  "description": "A deck of cards with shuffling.",
+  "main": "lib/shoe.js",
+  "version": "0.1.0",
+  "dependencies": {
+    "flight": "1.0.x"
+  },
+  "devDependencies": {
+    "jasmine-jquery": "*",
+    "flight-jasmine": "*"
+  }
+}
