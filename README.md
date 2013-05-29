@@ -13,24 +13,20 @@ bower install --save flight-deck
 ```javascript
 define(['flight-deck'], function(Deck) {
 
-  var shoe = '.shoe';
-
-  Deck.attachTo(shoe, {
+  Deck.attachTo(document, {
     numberOfDecks: 5
+    cardCut: 35
   });
 
-  $(shoe).on('deck-deal', function(e, card) {
+  $(document).on('deck-deal', function(e, card) {
     console.log(e, card);
   });
 
-  $(shoe).on('deck-empty', function(e, error) {
+  $(document).on('deck-empty', function(e, error) {
     console.error(e, error);
   });
 
-  $(shoe).trigger('deck-draw');
-
-  $(shoe).trigger('deck-reset');
-  $(shoe).trigger('deck-shuffle');
+  $(document).trigger('deck-draw');
 });
 ```
 
