@@ -1,3 +1,5 @@
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 # flight-deck
 
 A [Flight](https://github.com/twitter/flight) component for a deck of cards with Fisher-Yates shuffling.
